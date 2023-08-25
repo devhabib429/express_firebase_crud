@@ -2,7 +2,7 @@ const express = require('express');
 const { initializeApp } = require('firebase/app');
 const { getDatabase, ref, push, set, get, child, value, update, remove } = require('firebase/database');
 
-// Firebase configuration
+// Firebase configuration setup
 const firebaseConfig = {
     apiKey: "AIzaSyB96guk2QYgcaCe51ruJNEt8jhqBb31c-8",
     authDomain: "mynodeapi-53dd8.firebaseapp.com",
@@ -20,7 +20,7 @@ const database = getDatabase();
 const api = express();
 api.use(express.json());
 
-// Define a POST route to save data to Firebase
+// Define a POST route to save data in Firebase
 api.post('/data', async (req, res) => {
     const data = req.body;
 
