@@ -85,5 +85,5 @@ api.delete('/data/:id', async (req, res) => {
 // Start the server
 const port = 3000;
 api.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on ports ${port}`);
 });
